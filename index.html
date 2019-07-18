@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DRZZL - The Cool Weather App</title>
+  </head>
+  <body>
+    <h1>DRZZL</h1>
+    <h2>The Cool Weather App</h2>
+    <form class="weather-form" onsubmit="submitCoords();return false">
+      <label for="coordinates">Please input coordinates:</label>
+      <input type="text" name="coordinates" placeholder="Latititude, Longitude" id="coordinates">
+      <input type="submit" name="submit">
+    </form>
+    <p>
+      Timezone: <span id="timezone"></span><br>
+      Temp: <span id="temp"></span>&deg;<br>
+      Weather: <a href="#" id="forecastLink"><span id="weatherWords"></span> <img id="weatherIcon"></a><br>
+      Real Feel: <span id="realFeel"></span>&deg;<br>
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/retrieveWeather.js"></script>
+  </body>
+</html>
